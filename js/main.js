@@ -48,7 +48,9 @@ const words = [
 
 // Initialize Game
 function init() {
-    // show word from array
+    // Show number of seconds 
+    seconds.innerHTML = currentLevel
+    // Load word from array
     showWord(words)
     // Start matching on word input 
     wordInput.addEventListener('input', startMatch)
@@ -62,7 +64,7 @@ function init() {
 function startMatch() {
     if (matchWords()) {
         isPlaying = true
-        time = 6
+        time = currentLevel + 1
         showWord(words)
         wordInput.value = ''
         score++
