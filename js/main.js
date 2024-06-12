@@ -35,6 +35,16 @@ const words = [
     'symptom'
 ]
 
+// Initialize Game
 function init() {
-    console.log('init')
+    // show word from array
+    showWord(words)
+}
+
+// Pick & show random word 
+function showWord(words) {
+    // Generate random array index
+    const randIndex = Math.floor(Math.random() * words.length)
+    // Output random word
+    currentWord
 }
